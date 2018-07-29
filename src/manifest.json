@@ -25,7 +25,8 @@
 			"js": [
 				"features/characterCount.js",
 				"features/hideMembers.js",
-				"features/responsiveChannels.js"
+				"features/responsiveChannels.js",
+				"features/collapseChannelGroups.js"
 			]
 		}
 	]
