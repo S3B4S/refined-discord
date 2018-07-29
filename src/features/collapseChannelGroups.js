@@ -2,7 +2,7 @@ const arrowUp = 38
 const arrowDown = 40
 
 const hideElements = () => {
-  scrollChannelsToTop()
+  scrollChannelsTop()
 
   const elements = document.querySelectorAll("[class*='iconDefault-']")
   if (elements.length) {
@@ -12,8 +12,6 @@ const hideElements = () => {
 }
 
 const showElements = () => {
-  scrollChannelsToTop()
-
   const elements = document.querySelectorAll("[class*='closed-']")
   if (elements.length) {
     Array.from(elements)
@@ -23,10 +21,10 @@ const showElements = () => {
   }
 }
 
-const scrollChannelsToTop = () => {
+const scrollChannelsTop = () => {
   const channels = document.querySelector("[class*='channels-'] [class*='scroller-']")
-  const distanceToTop = channels.scrollTop
-  channels.scrollBy(0, -distanceToTop)
+  const distanceTop = channels.scrollTop
+  channels.scrollBy(0, -distanceTop)
 }
 
 window.addEventListener('keydown', event => {
